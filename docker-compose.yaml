@@ -60,9 +60,9 @@ services:
       - -c
       - listen_addresses=*
     environment:
-      - POSTGRES_DB=evolution_ymn7
-      - POSTGRES_USER=evolution
-      - POSTGRES_PASSWORD=kHTtVSAEZgU5zmNTGrUhyJmVZ5FHmxk3
+      - POSTGRES_DB=${POSTGRES_DATABASE}
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
